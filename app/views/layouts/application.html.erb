@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <% if flash[:notice] %>
+    <p id="notice">
+      <%= flash[:notice] %>
+    </p>
+    <% end %>
     <title>Bookers</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
